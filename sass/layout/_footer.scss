@@ -129,6 +129,9 @@
   text-transform: uppercase;
   color: var(--hero-text-color);
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .footer-input {
   // width: 358px;
