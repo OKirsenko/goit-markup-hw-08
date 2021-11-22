@@ -6,6 +6,9 @@
 }
 .footer__logo {
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .address {
   font-size: 14px;
@@ -15,6 +18,9 @@
   color: var(--hero-text-color);
   margin-top: 20px;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .footer-contacts {
   display: block;
@@ -34,6 +40,9 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
   }
 }
 
