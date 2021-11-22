@@ -148,11 +148,13 @@
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     margin-left: 80px;
+    margin-bottom: 10px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.2;
     margin-left: 0;
+    margin-bottom: 0;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -179,6 +181,10 @@
 }
 .humb-icon {
   fill: #000;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .menu-container {
