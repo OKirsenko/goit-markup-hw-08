@@ -252,8 +252,8 @@ body {
 .logo {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #000000;
   display: block;
@@ -395,6 +395,19 @@ body {
   color: var(--hero-text-color);
 }
 
+.header {
+  background-color: #fff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ececec;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media screen and (max-width: 767px) {
   .nav-list {
     display: none;
@@ -407,27 +420,117 @@ body {
   }
 }
 
+.humb-icon {
+  fill: #000;
+}
+
 .menu-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: aquamarine;
+  background-color: #fff;
+  padding: 48px 40px;
   transform: translateX(100%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .menu-container.is-open {
   transform: translateX(0);
 }
 
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  width: 40px;
+  height: 40px;
+}
+
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
+}
+
+.mobile-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.mobile-link-active {
+  color: var(--accent-color);
+}
+
+.mobile-contacts {
+  margin-bottom: 64px;
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.contacts-link {
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.contacts-link.phone {
+  font-size: 34px;
+  color: var(--accent-color);
+}
+
+.contacts-link.mail {
+  font-size: 24px;
+  color: var(--primary-text-color);
+}
+
+.mobile-socail-list {
+  display: flex;
+}
+
+.mobile-social-item {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-social-item:first-child {
+  padding-left: 0;
+}
+
+.mobile-social-item:last-child {
+  border: none;
+}
+
+.mobile-social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 
 .hero {
