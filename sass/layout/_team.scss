@@ -53,7 +53,7 @@
     }
   }
   @media screen and (min-width: 480px) {
-    width: 450px;
+    width: calc(100% / 2 - 30px);
     // тисмачово, для задання ширини
   }
   @media screen and (min-width: 768px) {
