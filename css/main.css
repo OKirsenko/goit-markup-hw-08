@@ -951,6 +951,7 @@ body {
 @media screen and (min-width: 1200px) {
   .team__item {
     width: inherit;
+    margin-bottom: 0;
   }
 }
 
@@ -1032,6 +1033,7 @@ body {
 @media screen and (min-width: 1200px) {
   .clients__item {
     width: 170px;
+    margin-bottom: 0;
   }
 }
 
